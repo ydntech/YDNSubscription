@@ -16,7 +16,7 @@
 }
 #ss-form label, #ss-form legend {
   color: #666;
-  font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+  font-family: Georgia,"Times New Roman",Times,serif;
 }
 #ss-form label .req, #ss-form legend .req {
   color: red;
@@ -25,10 +25,10 @@
 #ss-form input[type="submit"],
 #ss-form input[type="button"] {
   color: #feffea;
-  background-color: #963431;
-  font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+  background-color: #0f4d92;
+  font-family: Georgia,"Times New Roman",Times,serif;
   text-transform: uppercase;
-  border: 1px solid #630100;
+  border: 1px solid #0F4D8B;
   padding: 5px 10px;
   -moz-box-shadow: 0 3px 3px #eee;
   -o-box-shadow: 0 3px 3px #eee;
@@ -42,11 +42,11 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: white;
-  background-color: #630100;
-  -moz-box-shadow: 0 3px 3px #8f4d4c;
-  -o-box-shadow: 0 3px 3px #8f4d4c;
-  -webkit-box-shadow: 0 3px 3px #8f4d4c;
-  box-shadow: 0 3px 3px #8f4d4c;
+  background-color: #0f4d92;
+  -moz-box-shadow: 0 3px 3px #0F4D8B;
+  -o-box-shadow: 0 3px 3px #0F4D8B;
+  -webkit-box-shadow: 0 3px 3px #0F4D8B;
+  box-shadow: 0 3px 3px #0F4D8B;
 }
 
 #ss-form input[type="submit"]:disabled,
@@ -71,7 +71,7 @@ Interstitial spiel
 */
 #interstitial-close {
   text-align: right;
-  font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+  font-family: Georgia,"Times New Roman",Times,serif
   text-transform: uppercase;
 }
 #interstitial-close a {
