@@ -5,6 +5,7 @@
 body {
   color: #333333;
   font: normal normal 400 14px 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  background: url('http://fxevolve.com/blog/wp-content/uploads/2013/04/yale.jpg') no-repeat center center fixed;
   margin: 0;
   line-height: 1.2;
   padding: 0 1em;
@@ -372,6 +373,13 @@ td.ss-rightlabel {
 .ss-formwidget-container:focus {
   outline: none;
 }
+
+.ss-form{
+margin-left:auto;
+margin-right:auto;
+width:70%;
+}
+
 .ss-item {
   margin: 12px 0;
 }
