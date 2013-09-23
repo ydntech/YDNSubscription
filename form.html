@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="custom.css">	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+
+<script type="text/javascript">var submitted=false;</script><iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='http://yaledailynews.com/thanks';}"></iframe>
+
+<body id="interstitial-inline-wrapper">
+	
+<div id="interstitial-spiel">
+	</a></div>
+	<h1>From our yard to yours.</h1>
+	<p>Sign up to get alerted when there's important Harvard news.</p>
+</div>
+
+<div class="ss-form"><form action="https://docs.google.com/a/yale.edu/forms/d/1wFCn75UwKkZ2L4-RBbL891LAsmIdqOi0wfMLgULWCKQ/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit=""><ol style="padding-left: 0">
+	<div class="ss-form-question errorbox-good">
+		<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1481310630"><div class="ss-q-title">Name
+			<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+			<span class="ss-required-asterisk">*</span></div>
+			<div class="ss-q-help ss-secondary-text" dir="ltr">Please type in your full name</div></label>
+			<input type="text" name="entry.1481310630" value="" class="ss-q-short required" id="entry_1481310630" dir="auto" aria-required="true" required="" title="">
+			<div class="error-message"></div>
+			<div class="required-message">This is a required question</div>
+
+		</div></div></div> <div class="ss-form-question errorbox-good">
+		<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_113176287"><div class="ss-q-title">Email Address
+			<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+			<span class="ss-required-asterisk">*</span></div>
+			<div class="ss-q-help ss-secondary-text" dir="ltr">Please type in your email address</div></label>
+			<input type="text" name="entry.113176287" value="" class="ss-q-short required" id="entry_113176287" dir="auto" aria-required="true" required="" title="">
+			<div class="error-message"></div>
+			<div class="required-message">This is a required question</div>
+			<div id="result"></div>
+
+		</div></div></div> <div class="ss-form-question errorbox-good">
+		<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2120533881"><div class="ss-q-title">Home Address
+			<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+			<span class="ss-required-asterisk">*</span></div>
+			<div class="ss-q-help ss-secondary-text" dir="ltr">Please enter your home address - including city, state, country and zip code.</div></label>
+			<input type="text" name="entry.2120533881" value="" class="ss-q-short" id="entry_2120533881" dir="auto" aria-required="true" required="" title="">
+			<div class="error-message"></div>
+			<div class="required-message">This is a required question</div>
+
+		</div></div></div> <div class="ss-form-question errorbox-good">
+		<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1015950953"><div class="ss-q-title">Subscriptions
+			<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+			<span class="ss-required-asterisk">*</span></div>
+			<div class="ss-q-help ss-secondary-text" dir="ltr">Please check all the publications of the YDN you want to subscribe to for the upcoming academic year</div></label>
+			<ul class="ss-choices ss-choices-required"><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.455257565" value="Daily Paper ($290 per year)" id="group_455257565_1" class="ss-q-checkbox"></span>
+				<span class="ss-choice-label">Daily Paper ($290 per year)</span>
+			</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.455257565" value="Week in Review ($95 per year)" id="group_455257565_2" class="ss-q-checkbox"></span>
+			<span class="ss-choice-label">Week in Review ($95 per year)</span>
+		</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.455257565" value="YDN Magazine ($20 per year)" id="group_455257565_3" class="ss-q-checkbox"></span>
+		<span class="ss-choice-label">YDN Magazine ($20 per year)</span>
+	</label></li></ul>
+	<div class="error-message"></div>
+	<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+	<input type="submit" name="submit" value="Submit" id="ss-submit">
+
+	<script>
+	function validateEmail(email) { 
+		var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(email);
+	}
+
+	function validate(){
+		$("#result").text("");
+		var email = $("#entry_113176287").val();
+		if (validateEmail(email)) {
+			submitted=true;
+			return true;
+		} else {
+			$("#result").text(email + " is an invalid email address. Example of accepted format : john@gmail.com");
+			$("#result").css("color", "red");
+			return false;
+		}
+
+	}
+
+	$("form").bind("submit", validate);
+	</script>
+
+
+</tr></tbody></table></div></ol></form></div>
+
+
+</body>
+</html>

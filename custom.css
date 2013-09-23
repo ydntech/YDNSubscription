@@ -1,0 +1,114 @@
+#interstitial-inline-wrapper {
+  background: url('http://fxevolve.com/blog/wp-content/uploads/2013/04/yale.jpg') no-repeat center center fixed;
+  font: 0.9em/1.3em Georgia, serif;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
+Interstitial spiel
+*/
+#interstitial-close {
+  text-align: right;
+  font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+  text-transform: uppercase;
+}
+#interstitial-close a {
+  color: #ccc;
+}
+#interstitial-close a:hover, #interstitial-close a:active {
+  color: white;
+}
+#interstitial-spiel {
+  background-color: #963431;
+  padding: 25px;
+}
+#interstitial-spiel h1 {
+  font: 2.8em 'Crimson', Georgia, serif;
+  font-weight: normal;
+  color: #feffea;
+  margin: 0;
+}
+#interstitial-spiel p {
+  font-size: 1.3em;
+  margin: 0;
+  color: #ccc;
+}
+
+/*
+Form
+*/
+
+#ss-form {
+  background-color: #feffea;
+  padding: 25px;
+  color: black;
+}
+#ss-form form div {
+  margin-bottom: 25px;
+}
+#ss-form form span {
+  display: block;
+}
+#ss-form fieldset {
+  border: 0;
+  padding: 0;
+}
+#ss-form label, #ss-form legend {
+  color: #666;
+  font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+}
+#ss-form label .req, #ss-form legend .req {
+  color: red;
+  display: inline;
+}
+#ss-form input[type="submit"],
+#ss-form input[type="button"] {
+  color: #feffea;
+  background-color: #963431;
+  font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #630100;
+  padding: 5px 10px;
+  -moz-box-shadow: 0 3px 3px #eee;
+  -o-box-shadow: 0 3px 3px #eee;
+  -webkit-box-shadow: 0 3px 3px #eee;
+  box-shadow: 0 3px 3px #eee;
+}
+#ss-form input[type="submit"]:hover,
+#ss-form input[type="button"]:hover {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  background-color: #630100;
+  -moz-box-shadow: 0 3px 3px #8f4d4c;
+  -o-box-shadow: 0 3px 3px #8f4d4c;
+  -webkit-box-shadow: 0 3px 3px #8f4d4c;
+  box-shadow: 0 3px 3px #8f4d4c;
+}
+
+#ss-form input[type="submit"]:disabled,
+#ss-form input[type="button"]:disabled {
+  background-color: #bbb;
+}
+
+#ss-form input[type="submit"]:disabled:hover,
+#ss-form input[type="button"]:disabled:hover {
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#ss-form input[name="email"] {
+  width: 95%;
+  max-width: none;
+}
+
+.required-message {
+  visibility:hidden;
+}
+

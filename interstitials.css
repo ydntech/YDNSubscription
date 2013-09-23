@@ -1,0 +1,273 @@
+/*
+
+The Harvard Crimson
+INTERSTITIAL STYLESHEET
+CSS by Preston So, Director of Web Strategy
+www.prestonsodesign.com
+
+*/
+
+/*
+Interstitial layout
+*/
+#interstitial {
+	display: none;
+	color: white;
+	-moz-box-shadow: 0 3px 3px #ccc;
+	-o-box-shadow: 0 3px 3px #ccc;
+	-webkit-box-shadow: 0 3px 3px #ccc;
+	box-shadow: 0 3px 3px #ccc;
+	border: 1px solid #963431;
+	width: 640px;
+	margin: 10px auto;
+}
+
+#interstitial a {
+	text-decoration: none;
+}
+#interstitial a:hover, #interstitial a:active {
+	text-decoration: underline;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+/*
+Interstitial spiel
+*/
+#interstitial-close {
+	text-align: right;
+	font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+	text-transform: uppercase;
+}
+#interstitial-close a {
+	color: #ccc;
+}
+#interstitial-close a:hover, #interstitial-close a:active {
+	color: white;
+}
+#interstitial-spiel {
+	background-color: #963431;
+	padding: 25px;
+}
+#interstitial-spiel h1 {
+	font: 2.8em 'Crimson', Georgia, serif;
+	font-weight: normal;
+	color: #feffea;
+	margin: 0;
+}
+#interstitial-spiel p {
+	font-size: 1.3em;
+	margin: 0;
+	color: #ccc;
+}
+
+/*
+Interstitial form
+*/
+#interstitial-form {
+	background-color: #feffea;
+	padding: 25px;
+	color: black;
+}
+#interstitial-form form div {
+	margin-bottom: 25px;
+}
+#interstitial-form form span {
+	display: block;
+}
+#interstitial-form fieldset {
+	border: 0;
+	padding: 0;
+}
+#interstitial-form label, #interstitial-form legend {
+	color: #666;
+	font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+	text-transform: uppercase;
+}
+#interstitial-form label .req, #interstitial-form legend .req {
+	color: red;
+	display: inline;
+}
+#interstitial-form input[type="submit"],
+#interstitial-form input[type="button"] {
+	color: #feffea;
+	background-color: #963431;
+	font-family: 'Colaborate Light', 'Lucida Sans Unicode', sans-serif;
+	text-transform: uppercase;
+	border: 1px solid #630100;
+	padding: 5px 10px;
+	-moz-box-shadow: 0 3px 3px #eee;
+	-o-box-shadow: 0 3px 3px #eee;
+	-webkit-box-shadow: 0 3px 3px #eee;
+	box-shadow: 0 3px 3px #eee;
+}
+#interstitial-form input[type="submit"]:hover,
+#interstitial-form input[type="button"]:hover {
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	color: white;
+	background-color: #630100;
+	-moz-box-shadow: 0 3px 3px #8f4d4c;
+	-o-box-shadow: 0 3px 3px #8f4d4c;
+	-webkit-box-shadow: 0 3px 3px #8f4d4c;
+	box-shadow: 0 3px 3px #8f4d4c;
+}
+
+#interstitial-form input[type="submit"]:disabled,
+#interstitial-form input[type="button"]:disabled {
+	background-color: #bbb;
+}
+
+#interstitial-form input[type="submit"]:disabled:hover,
+#interstitial-form input[type="button"]:disabled:hover {
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#interstitial-form input[name="email"] {
+	width: 95%;
+	max-width: none;
+}
+#interstitial-inline-wrapper {
+	background: url('http://fxevolve.com/blog/wp-content/uploads/2013/04/yale.jpg') no-repeat center center fixed;
+	font: 0.9em/1.3em Georgia, serif;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#interstitial-inline #interstitial-form {
+	background-color: rgba(254, 255, 234, 0.9);
+}
+
+/*
+Interstitial affiliation
+*/
+#interstitial-affiliation {
+	zoom: 1;
+}
+#interstitial-affiliation:before, #interstitial-affiliation:after {
+	content: "";
+	display: table;
+}
+#interstitial-affiliation:after {
+	clear: both;
+}
+#interstitial-affiliation-left {
+	width: 50%;
+	float: left;
+}
+#interstitial-affiliation-right {
+	width: 50%;
+	float: right;
+}
+
+#modal {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.9);
+	position: fixed;
+	z-index: 10000;
+	display: none;
+	overflow: auto;
+}
+
+.modal-open {
+	overflow: hidden;
+}
+
+#interstitial-inline {
+	border: 1px solid #963431;;
+	margin: 100px auto 20px auto;
+	width: 95%;
+	max-width: 720px;
+}
+
+#interstitial-inline h1 {
+	margin-bottom: 10px;
+	padding: 0;
+	line-height: 1em;
+}
+
+#interstitial-inline .interstitial-close {
+	display: none;
+}
+#interstitial-inline #interstitial-spiel {
+	background: rgba(150, 52, 49, 0.9) url('https://s3.amazonaws.com/static.thecrimson.com/images/header-logo.png') no-repeat;
+	background-position: 100px -150px;
+}
+
+#interstitial-inline #interstitial-form input[type="text"], 
+#interstitial-inline #interstitial-form select {
+    width: 90%;
+    max-width: 267px;
+}
+
+#interstitial-inline #interstitial-form label,
+#interstitial-inline #interstitial-form legend {
+    font-size: 18px;
+    line-height: 1.3em;
+    text-transform: none;
+}
+#interstitial-form .interstitial-inline-only {
+	display: none;
+}
+#interstitial-inline #interstitial-form .interstitial-inline-only {
+	display: block;
+}
+#interstitial-inline #interstitial-inline-footer {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px 0;
+	background: rgba(150, 52, 49, 0.9);
+	font: 1em 'Crimson', Georgia, serif;
+	color: white;
+	text-align: center;
+}
+#interstitial-inline a {
+	color: #ba0600;
+	text-decoration: none;
+}
+#interstitial-inline-footer a {
+	color: white;
+}
+@media (max-width: 770px) {
+    #interstitial-inline {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 570px) {
+    #interstitial-inline h1 {
+        font-size: 2.2em;
+    }
+    
+    #interstitial-inline #interstitial-spiel p {
+        font-size: 1.2em;
+    }
+    #interstitial-inline #interstitial-spiel {
+	    background: rgba(150, 52, 49, 0.9);
+    }
+    #interstitial-form #interstitial-affiliation-left {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #interstitial-form #interstitial-affiliation-right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #interstitial-inline #interstitial-inline-footer {
+    	font-size: 0.6em;
+    }
+}
