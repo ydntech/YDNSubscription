@@ -93,9 +93,8 @@ Interstitial spiel
 .interstitial-spiel {
   background-color: rgba(255,255,255, 0.85);
   background-repeat:no-repeat;
-
   background-position:center; 
-
+  text-align: center;
   padding: 25px;
   min-height: 115px;
 
