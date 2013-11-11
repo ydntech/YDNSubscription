@@ -95,12 +95,10 @@ Interstitial spiel
   background-repeat:no-repeat;
   background-position:center; 
   text-align: center;
-  padding: 25px;
-  min-height: 115px;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
-.interstitial-spiel h1 {
+/*.interstitial-spiel h1 {
   font: 2.8em 'Crimson', Georgia, serif;
   font-weight: normal;
   color: #feffea;
@@ -110,14 +108,18 @@ Interstitial spiel
   font-size: 1.3em;
   margin: 0;
   color: #ccc;
-}
+}*/
 #interstitial-subs {
-  background-color: #0f4d92;
-  
-  padding: 25px;
+  background-color: rgba(15,77,146, 0.85);
+  /*background-color: #0f4d92;*/
+  padding-left: 25px; padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   min-height: 0;
   color: white;
-
+}
+#interstitial-subs h1 {
+  line-height: 15px;
 }
 /*
 Required Message
