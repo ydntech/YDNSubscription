@@ -6,7 +6,7 @@ body {
   color: #333333;
   font: normal normal 400 14px Georgia,"Times New Roman",Times,serif;
   background: url('../Images/yale.jpg') no-repeat center fixed;
-  background-size: 150%;
+  background-size: cover;
   margin: 0;
   line-height: 1.2;
   padding: 0 1em;
