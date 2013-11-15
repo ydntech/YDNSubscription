@@ -7,8 +7,24 @@
     <link rel="stylesheet" href="Styles/form.css">
     <link rel="stylesheet" href="Styles/custom.css">	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+		   $('.interstitial-spiel').css("visibility", "hidden");
+		   $('#interstitial-subs').css("visibility", "hidden");
+		   $('#ss-form').css("visibility", "hidden");
+		   	$('#bgimage').css("background-image", "url(./Images/background.jpg)").hide().fadeIn('slow');
+		   setTimeout(function (){
+		   	$('.interstitial-spiel').css("visibility", "visible");
+		   	$('.interstitial-spiel').hide().fadeIn('slow');
+		    $('#interstitial-subs').css("visibility", "visible");
+		   	$('#interstitial-subs').hide().fadeIn('slow');
+		    $('#ss-form').css("visibility", "visible");
+		   	$('#ss-form').hide().fadeIn('slow');
+		   }, 500);	//500ms delay
+		});
+	</script>
 </head>
-
+<body><div id="bgimage">
 <script type="text/javascript">var submitted=false;</script><iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='http://yaledailynews.com/thanks';}"></iframe>
 
 <div class="ss-form">
@@ -95,8 +111,7 @@
 </div></div></div>
 
 
-<input type="hidden" name="draftResponse" value="[]
-">
+<input type="hidden" name="draftResponse" value="[]">
 <input type="hidden" name="pageHistory" value="0">
 
 
@@ -125,10 +140,6 @@
 
 	$("form").bind("submit", validate);
 	</script>
-
-
 </tr></tbody></table></div></ol></form></div>
-
-
-</body>
+</div></body>
 </html>

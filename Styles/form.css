@@ -5,12 +5,18 @@
 body {
   color: #333333;
   font: normal normal 400 14px Georgia,"Times New Roman",Times,serif;
-  background: url('../Images/background.jpg') no-repeat center fixed;
-  background-size: cover;
+  /*background: url('../Images/background.jpg') no-repeat center fixed;
+  background-size: cover;*/
   margin: 0;
   line-height: 1.2;
-  padding: 0 1em;
+  padding: 0;
+  max-height: 500px;
 }
+
+#bgimage{
+  background-size: cover;
+}
+
 input,
 textarea {
   outline: none;
@@ -487,9 +493,4 @@ input#emailReceipt {
 .ss-prepopulate-input,
 .ss-submit-url-input {
   width: 100%;
-}
-.ssform {
-  background-color: rgba(0,255,255, 0.85);
-  color: rgba(0,255,255, 0.85);
-  outline-color: rgba(0,255,255, 0.85);
 }
