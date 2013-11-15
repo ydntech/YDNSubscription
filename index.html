@@ -12,7 +12,12 @@
 		   $('.interstitial-spiel').css("visibility", "hidden");
 		   $('#interstitial-subs').css("visibility", "hidden");
 		   $('#ss-form').css("visibility", "hidden");
-		   	$('#bgimage').css("background-image", "url(./Images/background.jpg)").hide().fadeIn('slow');
+
+			var img = new Image();
+			$(img).load(function (){
+		   		$('#bgimage').css("background-image", "url(./Images/background.jpg)").hide().fadeIn('slow');
+		   	});
+		   	img.src = "./Images/background.jpg";
 		   setTimeout(function (){
 		   	$('.interstitial-spiel').css("visibility", "visible");
 		   	$('.interstitial-spiel').hide().fadeIn('slow');
