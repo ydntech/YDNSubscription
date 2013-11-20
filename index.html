@@ -145,6 +145,16 @@
 
 	$("form").bind("submit", validate);
 	</script>
-</tr></tbody></table></div></ol></form></div>
+</tr></tbody></table></div>
+<div class="pull-right">
+	&#169 <span id="year"></span> YALE DAILY NEWS &#8226 
+	<a href="http://yaledailynews.com/rights-permissions/">ALL RIGHTS RESERVED</a>
+</div>
+</ol></form></div>
 </div></body>
+	<script type="text/javascript">
+		$(function () {
+			document.getElementById("year").innerHTML = (new Date()).getFullYear();
+		});
+	</script>
 </html>
