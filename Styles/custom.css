@@ -1,7 +1,7 @@
 
 #ss-form {
-  background-color: #feffea;
-  padding: 25px;
+  background-color: rgba(254,255,234, 0.90);
+  padding: 25px 5px 0px 25px;
   color: black;
 }
 #ss-form form div {

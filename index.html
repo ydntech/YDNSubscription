@@ -1,19 +1,41 @@
 <!-- Created by Soham Sankaran and Vincent Hu for the Yale Daily News -->
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <head>	
 	<title>Subscribe</title> 
 	<link rel="icon" type="image/gif" href="http://yaledailynews.com/wp-content/themes/yaledailynews/ydn-logo.gif">
     <link rel="stylesheet" href="Styles/form.css">
     <link rel="stylesheet" href="Styles/custom.css">	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-</head>
+	<script type="text/javascript">
+		$(function () {
+		   $('.interstitial-spiel').css("visibility", "hidden");
+		   $('#interstitial-subs').css("visibility", "hidden");
+		   $('#ss-form').css("visibility", "hidden");
 
+			var img = new Image();
+			$(img).load(function (){
+		   		$('#bgimage').css("background-image", "url(./Images/background.jpg)").hide().fadeIn('slow');
+		   	});
+		   	img.src = "./Images/background.jpg";
+		   setTimeout(function (){
+		   	$('.interstitial-spiel').css("visibility", "visible");
+		   	$('.interstitial-spiel').hide().fadeIn('slow');
+		    $('#interstitial-subs').css("visibility", "visible");
+		   	$('#interstitial-subs').hide().fadeIn('slow');
+		    $('#ss-form').css("visibility", "visible");
+		   	$('#ss-form').hide().fadeIn('slow');
+		   }, 500);	//500ms delay
+		});
+	</script>
+</head>
+<body><div id="bgimage">
 <script type="text/javascript">var submitted=false;</script><iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='http://yaledailynews.com/thanks';}"></iframe>
 
 <div class="ss-form">
 	<div class="interstitial-spiel">
 		<a href="http://yaledailynews.com">
-			<img src="./Images/masthead.gif">
+			<img src="./Images/masthead.gif" style='width:80%; max-width: 400px;' border="0" alt="Null">
 		</a>
 	</div>
 	<div id="interstitial-subs">
@@ -21,28 +43,47 @@
 		<p>Get the YDN delivered to your doorstep and help support the nation's Oldest College Daily.</p>
 	</div>
 <form action="https://docs.google.com/a/yale.edu/forms/d/1wFCn75UwKkZ2L4-RBbL891LAsmIdqOi0wfMLgULWCKQ/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit=""><ol style="padding-left: 0">
-		<div class="ss-form-question errorbox-good">
-			<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1481310630"><div class="ss-q-title">Name
-				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-				<span class="ss-required-asterisk">*</span></div>
-				<div class="ss-q-help ss-secondary-text" dir="ltr">Please type in your full name</div></label>
-				<input type="text" name="entry.1481310630" value="" class="ss-q-short" id="entry_1481310630" dir="auto" aria-required="true" required="" title="">
-				<div class="error-message"></div>
-				<div class="required-message">This is a required question</div>
 
-			</div></div></div> <div class="ss-form-question errorbox-good">
-			<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1246946854"><div class="ss-q-title">Phone Number
-				<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-				<span class="ss-required-asterisk">*</span></div>
-				<div class="ss-q-help ss-secondary-text" dir="ltr">Please type in your phone number</div></label>
-				<input type="text" name="entry.1246946854" value="" class="ss-q-short" id="entry_1246946854" dir="auto" aria-required="true" required="" title="">
-				<div class="error-message"></div>
-				<div class="required-message">This is a required question</div>
+	<div class="ss-form-question errorbox-good">
+	<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1015950953"><div class="ss-q-title">Subscription Options
+		<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+		<span class="ss-required-asterisk">*</span></div>
+		<div class="ss-q-help ss-secondary-text" dir="ltr">Please check all the publications of the YDN you want to subscribe to for the upcoming academic year</div></label>
 
-			</div></div></div> <div class="ss-form-question errorbox-good">
+		<ul class="ss-choices ss-choices-required"><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.455257565" value="Daily Paper ($290 per year)" id="group_455257565_1" class="ss-q-checkbox"></span>
+			<span class="ss-choice-label"><strong>Yale Daily News 'COMPLETE'</strong>: receive all the issues of the YDN regular paper for just <em>$290</em>.</span>
+		</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.455257565" value="Week in Review ($95 per year)" id="group_455257565_2" class="ss-q-checkbox"></span>
+		<span class="ss-choice-label"><strong>Yale Daily News 'Week in Review'</strong>: receive all weekly issues of the YDN 'Week in Review' for just <em>$95</em>.</span>
+		</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.455257565" value="YDN Magazine ($20 per year)" id="group_455257565_3" class="ss-q-checkbox"></span>
+		<span class="ss-choice-label"><strong>YDN Magazine</strong>: receive all issues of the Yale Daily News Magazine for just <em>$50</em>.</span>
+	</label></li></ul>
+	<div class="error-message"></div>
+	<div class="required-message">This is a required question</div>
+	</div></div></div>
+
+	<div class="ss-form-question errorbox-good">
+		<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1481310630"><div class="ss-q-title">Name
+			<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+			<span class="ss-required-asterisk">*</span></div>
+			<input type="text" name="entry.1481310630" value="" class="ss-q-short" id="entry_1481310630" dir="auto" aria-required="true" required="" title="">
+			<div class="error-message"></div>
+			<div class="required-message">This is a required question</div>
+	</div></div></div>
+
+
+	<div class="ss-form-question errorbox-good">
+	<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1246946854"><div class="ss-q-title">Phone Number
+		<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+		<span class="ss-required-asterisk">*</span></div>
+		<input type="text" name="entry.1246946854" value="" class="ss-q-short" id="entry_1246946854" dir="auto" aria-required="true" required="" title="">
+		<div class="error-message"></div>
+		<div class="required-message">This is a required question</div>
+
+	</div></div></div>
+
+			<div class="ss-form-question errorbox-good">
 			<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_113176287"><div class="ss-q-title">Email Address
 			</div>
-			<div class="ss-q-help ss-secondary-text" dir="ltr">Please type in your email address</div></label>
 			<input type="text" name="entry.113176287" value="" class="ss-q-short" id="entry_113176287" dir="auto" title="">
 			<div class="error-message"></div>
 			<div class="required-message">This is a required question</div>
@@ -72,6 +113,7 @@
 	<div class="error-message"></div>
 	<div class="required-message">This is a required question</div>
 
+<<<<<<< HEAD
 </div></div></div> <div class="ss-form-question errorbox-good">
 <div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1015950953"><div class="ss-q-title">Subscriptions
 	<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
@@ -87,9 +129,12 @@
 </label></li></ul>
 <div class="error-message"></div>
 <div class="required-message">This is a required question</div>
+=======
+>>>>>>> 249520d65392906e8795ec5b667f184ee22f9e1b
 </div></div></div>
-<input type="hidden" name="draftResponse" value="[]
-">
+
+
+<input type="hidden" name="draftResponse" value="[]">
 <input type="hidden" name="pageHistory" value="0">
 
 
@@ -118,6 +163,7 @@
 
 	$("form").bind("submit", validate);
 	</script>
+<<<<<<< HEAD
 
 
 </tr></tbody></table></div></ol></form></div>
@@ -125,3 +171,18 @@
 
 </body>
 </html>
+=======
+</tr></tbody></table></div>
+<div class="pull-right">
+	&#169 <span id="year"></span> YALE DAILY NEWS &#8226 
+	<a href="http://yaledailynews.com/rights-permissions/">ALL RIGHTS RESERVED</a>
+</div>
+</ol></form></div>
+</div></body>
+	<script type="text/javascript">
+		$(function () {
+			document.getElementById("year").innerHTML = (new Date()).getFullYear();
+		});
+	</script>
+</html>
+>>>>>>> 249520d65392906e8795ec5b667f184ee22f9e1b
